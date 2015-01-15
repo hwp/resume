@@ -1,0 +1,142 @@
+\documentclass[a4paper,14pt]{article}
+
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+% Font
+\usepackage{fontspec}
+\setmainfont[Scale=1.4]{PT Sans Narrow}
+
+% Footnote Symbol
+\usepackage[symbol*]{footmisc}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+
+  \newcommand{\resheading}[1]{\vspace{5pt}{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.8in}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\resbitem}[3]{
+\item
+\begin{tabular*}{6.8in}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} #2 & \textit{#3} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\rescitem}[2]{
+\item
+\begin{tabular*}{6.8in}[t]{l l}
+  \begin{tabular*}{1.5in}{l@{:}} #1 \\ \end{tabular*}
+  & #2 \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7.3in}{l@{\extracolsep{\fill}}r}
+\textbf{\Huge Weipeng He} \vspace{6pt} & \\
+Hagenbeckstr 60 & heweipeng@gmail.com \\
+Hamburg, 22527 Germany & +49-176-7580-6525 \\
+\end{tabular*}
+\\
+
+\vspace{2mm}
+
+\resheading{Education}
+
+\begin{itemize}
+\item
+	\ressubheading{University of Hamburg}{Hamburg, Germany}
+		{M.Sc. in Intelligent Adaptive System}{Oct. 2012 - Present}
+\begin{itemize}
+    \resitem{GPA: 1.50\footnote{According to German university grading scale, grade is given from 1.0 to 5.0 with 1.0 the best. 1.5 is equivalent to ``outstanding''.}}
+\end{itemize}
+
+\item
+\begin{tabular*}{6.8in}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{Tsinghua University} & Beijing, China \\
+		\textit{Bachelor in Computer Science and Technology} & \textit{Aug. 2008 - Jul. 2012} \\
+		\textit{Bachelor in Mathematics (second major)} & \textit{Sep. 2009 - Jul. 2012} \\
+\end{tabular*}\vspace{-6pt}
+\begin{itemize}
+  \resitem{GPA: 89/100; Rank: 11/117}
+\end{itemize}
+\end{itemize}
+
+\resheading{Experience}
+
+\begin{itemize}
+  \item
+    \ressubheading{Technical Aspects of Multimodal Systems Group}{University of Hamburg}
+    {Research Assistant}{Oct. 2012 - Present}
+    \begin{itemize}
+        \resitem{Implemented an visual-audio object recognition system using hidden Markov model\footnotemark.}
+        \resitem{In addition to classifying an object, the system is also able to recognize the material of the object according to the sound.}
+        \footnotetext{Example projects can be found in my GitHub repos: notGHMM, gval and interactiveOR in \texttt{https://github.com/hwp} .}
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item
+	\ressubheading{Hulu (Beijing) Software Corporation}{Beijing, China}
+		{Internship}{Jun. 2012 - Sep. 2012}
+    \begin{itemize}
+        \resitem{Improved search engine with fast approximate string matching.}
+    \end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+  \item
+    \ressubheading{Intelligent Information Acquisition Group}{Tsinghua University}
+    {Research Assistant}{Feb. 2012 - Jul. 2012}
+    \begin{itemize}
+        \resitem{Developed a dialogue system with reinforcement learning.}
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+  \item
+    \ressubheading{Nature Language Processing Group}{Tsinghua University}
+    {Research Assistant}{Apr. 2010 - Jan. 2012}
+    \begin{itemize}
+        \resitem{Explored novel methods of using Wikipedia knowledge for keyword extraction and word sense disambiguation.}
+    \end{itemize}
+\end{itemize}
+
+\resheading{Skills}
+
+\begin{itemize}
+    \resbitem{Programming Languages\footnotemark:}{C, Java, C++, Python, Matlab.}{}
+    \footnotetext{Languages are listed in a descending order of proficiency.}
+    \resbitem{Libraries:}{Gstreamer, OpenCV, GSL.}{}
+    \resbitem{Tools:}{Vim, Bash scripts, LaTeX.}{}
+    \resbitem{Languages:}{Chinese (native speaker), English (fluent), German (beginner).}{}
+\end{itemize}
+
+\resheading{Scholarship and Awards}
+
+\begin{itemize}
+    \resbitem{Merit scholarships for international students ,}{University of Hamburg.}{Oct. 2013 - Mar. 2015}
+    \resbitem{Outstanding Graduate,}{Tsinghua University.}{Jul. 2012}
+\end{itemize}
+
+\end{document}
