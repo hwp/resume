@@ -1,0 +1,171 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,11pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Linux Libertine O} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Weipeng \textsc{He}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & China | 13 November 1988 \\
+\textsc{Address:} & Hagenbeckstr. 60, Hamburg, Germany \\
+\textsc{Phone:} & +49 176 75806525\\
+\textsc{email:} & \href{mailto:2he@informatik.uni-hamburg.de}{2he@informatik.uni-hamburg.de}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\begin{tabular}{r|p{11cm}}	
+  \textsc{Oct 2012 - May 2015} & Master of Science in \textsc{Intelligent Adaptive Systems} \\
+  {\small (expected)} & \textbf{University of Hamburg}, Hamburg, Germany \\
+  & \textsc{Gpa}: 1.50 \\
+  \multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+  \textsc{Aug 2008 - Jul 2012} & Bachelor in \textsc{Computer Science and Technology} \\
+  \textsc{Aug 2009 - Jul 2012} & Bachelor in \textsc{Mathematics} (second major) \\
+  & \textbf{Tsinghua University}, Beijing, China \\
+  & \textsc{Gpa}: 90/100 \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+% Experiences
+%----------------------------------------------------------------------------------------
+
+\section{Experiences}
+\begin{tabular}{r|p{11cm}}	
+  \textsc{Oct 2012} - Present & \textsc{Technical Aspects of Multimodal Systems Group} \\
+  & University of Hamburg, Hamburg, Germany \\
+  & Advisor: Prof. Jianwei \textsc{Zhang} \\
+  & {\footnotesize Implemented an visual-audio object recognition system using hidden Markov models.} \\
+  & {\footnotesize In addition to classifying an object, the system is also able to recognize the material of the object according to the sound.}\\
+  \multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+  \textsc{Jun 2012 - Sep 2012} & Research Intern at \textsc{Hulu (Beijing) Software Corporation} \\
+  & Beijing, China \\
+  & {\footnotesize Improved the search engine with fast approximate string matching.} \\
+  \multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+  \textsc{Feb 2012 - Jul 2012} & \textsc{Intelligent Information Acquisition Group} \\
+  & Tsinghua University, Beijing, China \\
+  & Advisor: Prof. Xiaoyan \textsc{Zhu} \\
+  & {\footnotesize Developed a dialogue system with reinforcement learning.} \\
+  \multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+  \textsc{Apr 2010 - Jan 2012} & \textsc{Nature Language Processing Group} \\
+  & Tsinghua University, Beijing, China \\
+  & Advisor: Prof. Maosong \textsc{Sun} \\
+  & {\footnotesize Explored novel methods of using Wikipedia knowledge for keyword extraction and word sense disambiguation.} \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	Awards
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\begin{tabular}{rl}
+  \textsc{Oct 2013 - Mar 2015} & Merit Scholarship for International Students, {\small University of Hamburg}. \\
+  \textsc{July 2012} & Outstanding Graduate, {\small Tsinghua University}. \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Technical Skills}
+
+\begin{tabular}{rl}
+  Programming Languages: & \textbf{C/C++}, Java, Python, Matlab, Scheme. \\
+  Libraries: & Gstreamer, OpenCV, GSL. \\
+  Parallel Programming: & OpenMP. \\
+  Other Tools: & VIM, BASH scripts, \LaTeX, GDB, GIT. \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\begin{tabular}{rl}
+  \textsc{English:} & Fluent \\
+  \textsc{Chinese:} & Native Speaker \\
+  \textsc{German:} & Basic (CEFR A2) \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+%\section{Interests and Activities}
+%Handball, Traveling
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
+
