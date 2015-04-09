@@ -44,11 +44,14 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
+\usepackage{array}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+
+\usepackage[none]{hyphenat}
+
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
-
-\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
@@ -70,9 +73,9 @@
 %----------------------------------------------------------------------------------------
 
 \section{Education}
-\begin{tabular}{r|p{11cm}}	
+\begin{tabular}{R{3.5cm}|p{11cm}}	
   \textsc{Oct 2012 - May 2015} & Master of Science in \textsc{Intelligent Adaptive Systems} \\
-  {\small (expected)} & \textbf{University of Hamburg}, Hamburg, Germany \\
+  {\footnotesize (expected)} & \textbf{University of Hamburg} \hfill Hamburg, Germany \\
   & \textsc{Gpa}: 1.50 \\
   \multicolumn{2}{c}{} \\
 
@@ -80,7 +83,7 @@
 
   \textsc{Aug 2008 - Jul 2012} & Bachelor in \textsc{Computer Science and Technology} \\
   \textsc{Aug 2009 - Jul 2012} & Bachelor in \textsc{Mathematics} (second major) \\
-  & \textbf{Tsinghua University}, Beijing, China \\
+  & \textbf{Tsinghua University} \hfill Beijing, China \\
   & \textsc{Gpa}: 90/100 \\
 
 \end{tabular}
@@ -90,35 +93,32 @@
 %----------------------------------------------------------------------------------------
 
 \section{Experiences}
-\begin{tabular}{r|p{11cm}}	
-  \textsc{Oct 2012} - Present & \textsc{Technical Aspects of Multimodal Systems Group} \\
-  & University of Hamburg, Hamburg, Germany \\
-  & Advisor: Prof. Jianwei \textsc{Zhang} \\
-  & {\footnotesize Implemented an visual-audio object recognition system using hidden Markov models.} \\
-  & {\footnotesize In addition to classifying an object, the system is also able to recognize the material of the object according to the sound.}\\
+\begin{tabular}{R{3.5cm}|p{11cm}}	
+  \textsc{Oct 2012} - Present & Research Assistant at \textsc{Technical Aspects of Multimodal Systems Group}, University of Hamburg \\
+  & Advisor: Prof. Dr. Jianwei \textsc{Zhang} \\
+  & {\footnotesize Implemented a \textit{visual-audio object recognition} system based on \textit{hidden Markov models}. (Master thesis in progress, a \hyperlink{synopsis}{synopsis} is attached)} \\
+  & {\footnotesize Developed an HMM library in C with parallel computing. (available under the LGPL, \href{http://github.com/hwp/notghmm}{website})} \\
   \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
   \textsc{Jun 2012 - Sep 2012} & Research Intern at \textsc{Hulu (Beijing) Software Corporation} \\
-  & Beijing, China \\
-  & {\footnotesize Improved the search engine with fast approximate string matching.} \\
+  & {\footnotesize Improved the search engine with \textit{fast approximate string matching}.} \\
   \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-  \textsc{Feb 2012 - Jul 2012} & \textsc{Intelligent Information Acquisition Group} \\
-  & Tsinghua University, Beijing, China \\
+  \textsc{Feb 2012 - Jul 2012} & Research Assistant at \textsc{Intelligent Information Acquisition Group}, Tsinghua University \\
   & Advisor: Prof. Xiaoyan \textsc{Zhu} \\
-  & {\footnotesize Developed a dialogue system with reinforcement learning.} \\
+  & {\footnotesize Implemented a \textit{dialog system} with reinforcement learning.} \\
   \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-  \textsc{Apr 2010 - Jan 2012} & \textsc{Nature Language Processing Group} \\
-  & Tsinghua University, Beijing, China \\
+  \textsc{Apr 2010 - Jan 2012} & Research Assistant at \textsc{Nature Language Processing Group}, Tsinghua University \\
   & Advisor: Prof. Maosong \textsc{Sun} \\
-  & {\footnotesize Explored novel methods of using Wikipedia knowledge for keyword extraction and word sense disambiguation.} \\
+  & {\footnotesize Implemented a \textit{keyword extraction} and \textit{word sense disambiguation} system using Wikipedia knowledge.} \\
+  & {\footnotesize Constructed a news corpus from Internet resources with labeled data for keyword extraction.} \\
 
 \end{tabular}
 
@@ -129,8 +129,10 @@
 \section{Awards}
 
 \begin{tabular}{rl}
-  \textsc{Oct 2013 - Mar 2015} & Merit Scholarship for International Students, {\small University of Hamburg}. \\
-  \textsc{July 2012} & Outstanding Graduate, {\small Tsinghua University}. \\
+  \textsc{Oct 2013 - Mar 2015} & \textbf{Merit Scholarship for International Student}, {\small University of Hamburg}. \\
+  \textsc{July 2012} & \textbf{Outstanding Graduate}, {\small Tsinghua University}. \\
+  & {\footnotesize Awarded to the top 10 percents of all graduates.}
+
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -143,7 +145,7 @@
   Programming Languages: & \textbf{C/C++}, Java, Python, Matlab, Scheme. \\
   Libraries: & Gstreamer, OpenCV, GSL. \\
   Parallel Programming: & OpenMP. \\
-  Other Tools: & VIM, BASH scripts, \LaTeX, GDB, GIT. \\
+  Other Tools: & Vim, Bash scripts, \LaTeX, GDB, Git. \\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -155,7 +157,7 @@
 \begin{tabular}{rl}
   \textsc{English:} & Fluent \\
   \textsc{Chinese:} & Native Speaker \\
-  \textsc{German:} & Basic (CEFR A2) \\
+  \textsc{German:} & Basic \\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -166,6 +168,15 @@
 %Handball, Traveling
 
 %----------------------------------------------------------------------------------------
+
+\newpage
+
+\par{\centering \Large \hypertarget{synopsis}{A Brief Synopsis of Master Thesis}\par}
+
+Title: Visual-Audio Object Recognition using Hidden Markov Models
+
+
+
 
 \end{document}
 
