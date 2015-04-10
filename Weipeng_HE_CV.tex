@@ -47,8 +47,6 @@
 \usepackage{array}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
-\usepackage[none]{hyphenat}
-
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
@@ -102,7 +100,7 @@
 
 %------------------------------------------------
 
-  \textsc{Jun 2012 - Sep 2012} & Research Intern at \textsc{Hulu (Beijing) Software Corporation} \\
+  \textsc{Jun 2012 - Sep 2012} & Intern at \textsc{Hulu (Beijing) Software Corporation} \\
   & {\footnotesize Improved the search engine with \textit{fast approximate string matching}.} \\
   \multicolumn{2}{c}{} \\
 
@@ -129,7 +127,7 @@
 \section{Awards}
 
 \begin{tabular}{rl}
-  \textsc{Oct 2013 - Mar 2015} & \textbf{Merit Scholarship for International Student}, {\small University of Hamburg}. \\
+  \textsc{Oct 2013 - Mar 2015} & \textbf{Merit Scholarship for International Students}, {\small University of Hamburg}. \\
   \textsc{July 2012} & \textbf{Outstanding Graduate}, {\small Tsinghua University}. \\
   & {\footnotesize Awarded to the top 10 percents of all graduates.}
 
@@ -175,8 +173,11 @@
 
 Title: Visual-Audio Object Recognition using Hidden Markov Models
 
+Comparing to traditional visual object recognition, multimodal object recognition is advantageous in that different modalities provide complementary information. This work aims to implement a system for object recognition given videos of interactions with objects and investigate different modality fusion methods.
 
+The bag-of-words model with SIFT descriptors and the MFCC are used as visual and audio features. The system classify objects by computing the probability with learned hidden Markov models. The system incorporates two different fusion methods: feature level fusion and decision level fusion. The former method learns a joint probability distributions with one HMM, while the latter method learns two separate probability distribution with two HMMs and combine them under the conditional independence assumption.
 
-
+Experiments based on a dataset of 33 different household objects are carried out to evaluate the performance of these two fusion methods as well as single modality approaches. The result shows that both fusion methods improved the performance over single modality methods, while these two methods are mostly comparable. 
+ 
 \end{document}
 
