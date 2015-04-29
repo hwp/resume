@@ -27,7 +27,7 @@
 
 \usepackage{fontspec} % For loading fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont{Linux Libertine O} % Main document font
+\setmainfont{Aller} % Main document font
 
 \usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
 
@@ -42,18 +42,22 @@
 
 \usepackage{titlesec} % Used to customize the \section command
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
-\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+\titlespacing{\section}{0pt}{8pt}{3pt} % Spacing around sections
 
 \usepackage{array}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
-\usepackage{pifont} % for the star glyph
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{Weipeng He} 
+\rfoot{Page \thepage} 
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{1pt}
 
 \hyphenation{Tsinghua}
 
 \begin{document}
-
-\pagestyle{empty} % Removes page numbering
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
@@ -65,7 +69,7 @@
 
 \begin{tabular}{rl}
 \textsc{Place and Date of Birth:} & China | 13 November 1988 \\
-\textsc{Address:} & Hagenbeckstr. 60, Hamburg, Germany \\
+\textsc{Address:} & Hagenbeckstr. 60, 22527 Hamburg, Germany \\
 \textsc{Phone:} & +49 176 75806525\\
 \textsc{Email:} & \href{mailto:2he@informatik.uni-hamburg.de}{2he@informatik.uni-hamburg.de}
 \end{tabular}
@@ -98,35 +102,35 @@
 \begin{tabular}{R{3.5cm}|p{11cm}}	
   \textsc{Oct 2012} - Present & \textsc{Technical Aspects of Multimodal Systems Group}, University of Hamburg \\
   & {\footnotesize Advisor:} Prof. Dr. Jianwei \textsc{Zhang} \\
-  & {\footnotesize (Master Thesis in progress) Visual-Audio Object Recognition using Hidden Markov Models. (\hyperlink{synopsis}{synopsis})} \\
+  & {\footnotesize (Master Thesis) \textbf{Visual-Audio Object Recognition using Hidden Markov Models}. (\hyperlink{synopsis}{synopsis})} \\
   & {\footnotesize Developed an HMM library in C with parallel computing. (available under the LGPL, \href{http://github.com/hwp/notghmm}{website})} \\
   \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
   \textsc{Jun 2012 - Sep 2012} & Intern at \textsc{Hulu (Beijing) Software Corporation} \\
-  & {\footnotesize Improved the search engine with \textit{fast approximate string matching}.} \\
+  & {\footnotesize Improved the search engine with \textbf{fast approximate string matching}.} \\
   \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
   \textsc{Feb 2012 - Jul 2012} & \textsc{Intelligent Information Acquisition Group}, Tsinghua University \\
   & {\footnotesize Advisor:} Prof. Xiaoyan \textsc{Zhu} \\
-  & {\footnotesize (Bachelor Thesis) Knowledge-Based Dialog System using Reinforcement Learning.} \\
+  & {\footnotesize (Bachelor Thesis) \textbf{Knowledge-Based Dialog System using Reinforcement Learning}.} \\
   \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
   \textsc{Feb 2012 - Jul 2012} & \textsc{Department of Mathematical Sciences}, Tsinghua University \\
   & {\footnotesize Advisor:} Dr. Hao \textsc{Wu} \\
-  & {\footnotesize (Bachelor Thesis) A Study of Lagrangian Method for the Wave Equations.} \\
+  & {\footnotesize (Bachelor Thesis) \textbf{A Study of Lagrangian Method for the Wave Equations.}} \\
   \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
   \textsc{Apr 2010 - Jan 2012} & \textsc{Nature Language Processing Group}, Tsinghua University \\
   & {\footnotesize Advisor:} Prof. Maosong \textsc{Sun} \\
-  & {\footnotesize Implemented a \textit{keyword extraction} and \textit{word sense disambiguation} system using Wikipedia knowledge.} \\
+  & {\footnotesize Implemented a \textbf{keyword extraction} and \textbf{word sense disambiguation} system using Wikipedia knowledge.} \\
   & {\footnotesize Constructed a news corpus from Internet resources with labeled data for keyword extraction.} \\
 
 \end{tabular}
@@ -140,7 +144,7 @@
 \begin{tabular}{rl}
   \textsc{Oct 2013 - Mar 2015} & \textbf{Merit Scholarship for International Students}, {\small University of Hamburg}. \\
   \textsc{July 2012} & \textbf{Outstanding Graduate}, {\small Tsinghua University}. \\
-  & {\footnotesize Awarded to the top 10 percents of all graduates.}
+  & {\footnotesize (Awarded to the top 10 percents of all graduates.)}
 
 \end{tabular}
 
@@ -151,7 +155,7 @@
 \section{Technical Skills}
 
 \begin{tabular}{rl}
-  Programming Languages: & C \raisebox{.8ex}{\scriptsize \ding{73}}, C++, Java, Python, Matlab, Scheme. \\
+  Programming Languages: & \textbf{C}, C++, Java, Python, Matlab, Scheme. \\
   Libraries: & Gstreamer, OpenCV, GSL. \\
   Parallel Programming: & OpenMP. \\
   Other Tools: & Vim, Bash scripts, \LaTeX, GDB, Git. \\
@@ -176,15 +180,30 @@
   GitHub: & \href{https://github.com/hwp}{github.com/hwp} \\
 \end{tabular}
 
+\section{References}
 
-%----------------------------------------------------------------------------------------
-%	INTERESTS AND ACTIVITIES
-%----------------------------------------------------------------------------------------
 
-%\section{Interests and Activities}
-%Handball, Traveling
 
-%----------------------------------------------------------------------------------------
+\begin{tabular}{rl}
+ Prof. Dr. Jianwei \textsc{Zhang} & University of Hamburg \\
+ \footnotesize{(Thesis Advisor)} & Department of Informatics, Group TAMS \\
+   & Vogt-Kölln-Str. 30 \\
+   & 22527 Hamburg, Germany \\
+   & \href{mailto:zhang@informatik.uni-hamburg.de}{zhang@informatik.uni-hamburg.de} \\
+   \\
+ Prof. Dr. Stefan \textsc{Wermter} & University of Hamburg \\
+   & Department of Informatics, Group WTM\\
+   & Vogt-Kölln-Str. 30 \\
+   & 22527 Hamburg, Germany \\
+   & \href{mailto:wermter@informatik.uni-hamburg.de}{wermter@informatik.uni-hamburg.de} \\
+   \\
+ Dr. Andreas \textsc{M\"ader} & University of Hamburg \\
+   & Department of Informatics, Group TAMS\\
+   & Vogt-Kölln-Str. 30 \\
+   & 22527 Hamburg, Germany \\
+   & \href{mailto:maeder@informatik.uni-hamburg.de}{maeder@informatik.uni-hamburg.de} \\
+\end{tabular}
+
 
 \vspace{.5cm}
 \par{\centering \scriptsize Last updated: \today \par}
