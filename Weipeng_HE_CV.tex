@@ -207,6 +207,7 @@
 \vspace{.5cm}
 \par{\centering \scriptsize Last updated: \today \par}
 
+\iffalse
 \newpage
 
 \par{\centering \Large \hypertarget{synopsis}{A Brief Synopsis of Master Thesis}\par}
@@ -218,6 +219,7 @@ Comparing to traditional visual object recognition, multimodal object recognitio
 The bag-of-words model with SIFT descriptors and the MFCC are used as visual and audio features. The system classify objects by computing the probabilities with learned hidden Markov models. The system incorporates two different fusion methods: feature fusion and decision fusion. The former method learns a joint probability distribution with one HMM, while the latter method learns two separate distributions for each modality and combine them under the conditional independence assumption.
 
 Experiments based on a dataset of 33 different household objects are carried out to evaluate the performance of these two fusion methods as well as single modality approaches. The result shows that both fusion methods improved the performance over single modality methods, while these two methods are mostly comparable. 
+\fi
  
 \end{document}
 
