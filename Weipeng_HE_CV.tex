@@ -25,31 +25,32 @@
 
 \documentclass[a4paper,11pt]{article} % Default font size and paper size
 
-\usepackage{fontspec} % For loading fonts
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont{TeX Gyre Pagella} % Main document font
+%\usepackage{fontspec} % For loading fonts
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont{TeX Gyre Pagella} % Main document font
 
-\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage{url,parskip} % Formatting packages
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
 \usepackage{fullpage}
+
 
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titleformat{\section}{\Large\bfseries\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{5pt}{-3pt} % Spacing around sections
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
-\lfoot{Weipeng He} 
-\rfoot{Page \thepage} 
+\rhead{Weipeng He, Page \thepage} 
 \renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{1em}
 
 \usepackage{enumitem}
 \setlist{nosep}
@@ -60,13 +61,14 @@
 \setlength{\parskip}{12pt}
 
 \begin{document}
+\thispagestyle{empty}
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
 \begin{center}
-  {\Huge Weipeng \textsc{He}}
+  {\Huge\bfseries Weipeng He}
 
   Hagenbeckstr. 60, 22527 Hamburg, Germany $\cdotp$
   \href{mailto:heweipeng@gmail.com}{heweipeng@gmail.com} $\cdotp$
@@ -77,10 +79,11 @@
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
-\section{Education}
+\section{EDUCATION}
 \textbf{University of Hamburg} \hfill Hamburg, Germany \\
-\ind M.Sc. in \textit{Intelligent Adaptive Systems}, GPA: 1.38/1.0  \hfill September 2015
-  
+\ind M.Sc. in \textit{Intelligent Adaptive Systems}, GPA: 1.38/1.0  \hfill September 2015 \\
+\ind - Thesis: Visual-Audio Object Recognition Using Hidden Markov Models (Grade: 1.0)
+
 \textbf{Tsinghua University} \hfill Beijing, China \\
 \ind B.E. in \textit{Computer Science and Technology}, GPA: 90/100 \hfill July 2012 \\
 \ind B.S. in \textit{Pure and Applied Mathematics} (second major), GPA: 83/100 \hfill July 2012
@@ -89,15 +92,15 @@
 % Experiences
 %----------------------------------------------------------------------------------------
 
-\section{Research Experience}
+\section{RESEARCH EXPERIENCE}
 
 \textbf{University of Hamburg}, TAMS Group \hfill Hamburg, Germany \\
-\textit{Research Assistant} to Professor Jianwei \textsc{Zhang} \hfill October 2012 - present
+\textit{Research Assistant} to Professor Jianwei Zhang \hfill October 2012 - present
 \vspace{-\parskip}
 \begin{itemize}
   \item Developed visual-audio object recognition system using hidden Markov models.
   \item Examined and compared feature fusion and decision fusion methods for multimodal object recognition with experiments.
-  \item Implemented C library for hidden Markov models (\href{https://github.com/hwp/notGHMM}{website}).
+  \item Implemented C library for hidden Markov models (available under LGPL, \href{https://github.com/hwp/notGHMM}{website}).
   \item Tested noise reduction methods for robots' voice command using spectral subtraction and blind source separation techniques.
 \end{itemize}
 
@@ -114,7 +117,7 @@
 %------------------------------------------------
 
 \textbf{Tsinghua University}, Intelligent Information Acquisition Group \hfill Beijing, China \\
-\textit{Research Assistant} to Professor Xiaoyan \textsc{Zhu} \hfill February - June 2012
+\textit{Research Assistant} to Professor Xiaoyan Zhu \hfill February - June 2012
 \vspace{-\parskip}
 \begin{itemize}
   \item Implemented cell phone retail dialog system incorporating reinforcement learning.
@@ -123,7 +126,7 @@
 %------------------------------------------------
 
 \textbf{Tsinghua University}, Department of Mathematical Sciences \hfill Beijing, China \\
-\textit{Research Assistant} to Dr. Hao \textsc{Wu} \hfill February - June 2012
+\textit{Research Assistant} to Dr. Hao Wu \hfill February - June 2012
 \vspace{-\parskip}
 \begin{itemize}
   \item Studied Lagrangian method for wave equations.
@@ -132,7 +135,7 @@
 %------------------------------------------------
 
 \textbf{Tsinghua University}, Nature Language Processing Lab \hfill Beijing, China \\
-\textit{Research Assistant} to Professor Maosong \textsc{Sun} \hfill 2010 - 2012
+\textit{Research Assistant} to Professor Maosong Sun \hfill 2010 - 2012
 \vspace{-\parskip}
 \begin{itemize}
   \item Explored methods for keyword extraction and word sense disambiguation using Wikipedia data.
@@ -143,19 +146,21 @@
 %	Awards
 %----------------------------------------------------------------------------------------
 
-\section{Awards}
+\section{SCHOLARSHIPS AND AWARDS}
 
-\textbf{Merit Scholarship for International Students}, University of Hamburg \hfill 2013 - 2015 \\
-\textbf{Outstanding Graduate}, Tsinghua University (top 10\%) \hfill July 2012
+Merit Scholarship for International Students, University of Hamburg \hfill 2013 - 2015 \\
+Outstanding Graduate, Tsinghua University (top 10\%) \hfill July 2012 \\
+Tung OOCL Scholarship, Tsinghua University \hfill December 2010  \\
+Zheng Geru Scholarship, Tsinghua University \hfill December 2009
 
 %----------------------------------------------------------------------------------------
 %	TECHNICAL SKILLS 
 %----------------------------------------------------------------------------------------
 
-\section{Technical Skills}
+\section{TECHNICAL SKILLS}
 
 \begin{tabular}{rl}
-  Programming Languages: & \textbf{C} $\cdotp$ C++ $\cdotp$ Java $\cdotp$ Python $\cdotp$ Matlab $\cdotp$ Scheme. \\
+  Programming Languages: & C $\cdotp$ C++ $\cdotp$ Java $\cdotp$ Python $\cdotp$ Matlab $\cdotp$ Scheme. \\
   Libraries: & Gstreamer $\cdotp$ OpenCV $\cdotp$ GSL. \\
   Parallel Programming: & OpenMP. \\
   Other Tools: & Vim $\cdotp$ Bash scripts $\cdotp$ \LaTeX $\cdotp$ GDB $\cdotp$ Git. \\
@@ -165,17 +170,17 @@
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
 
-\section{Publications}
+\section{PUBLICATIONS}
 \begin{itemize}
-  \item "Multimodal object recognition from visual and audio sequences." \\
+  \item ``Multimodal object recognition from visual and audio sequences.'' \\
     Weipeng He; Haojun Guan; Jianwei Zhang \\
     \textit{2015 IEEE International Conference on Multisensor Fusion and Information Integration for Intelligent Systems (MFI)}, Sept. 2015 
 
-  \item "What to do first: The initial behavior in a multi-sensory household object recognition and categorization system." \\
+  \item ``What to do first: The initial behavior in a multi-sensory household object recognition and categorization system.'' \\
     Haojun Guan; Weipeng He; Jianwei Zhang \\
     \textit{2014 IEEE International Conference on Multisensor Fusion and Information Integration for Intelligent Systems (MFI)} , Sept. 2014
 
-  \item "Thunlp at tac kbp 2011 in entity linking." \\
+  \item ``Thunlp at tac kbp 2011 in entity linking.'' \\
     Yu Zhao; Weipeng He; Zhiyuan Liu; Maosong Sun \\
     \textit{Proceedings of TAC}, 2011
 \end{itemize}
@@ -184,15 +189,15 @@
 %	LANGUAGES
 %----------------------------------------------------------------------------------------
 
-\section{Languages}
+\section{LANGUAGES}
 
 \begin{tabular}{rl}
-  \textsc{English:} & TOEFL ibt 106 (reading 29 $\cdotp$ listening 27 $\cdotp$ speaking 23 $\cdotp$ writing 27) \\
-  \textsc{Chinese:} & Native Speaker \\
-  \textsc{German:} & Basic \\
+  English: & TOEFL ibt 106 (reading 29 $\cdotp$ listening 27 $\cdotp$ speaking 23 $\cdotp$ writing 27) \\
+  Chinese: & Native Speaker \\
+  German: & Basic \\
 \end{tabular}
 
-\section{Miscellaneous}
+\section{MISCELLANEOUS}
 
 \begin{tabular}{rl}
   Interests: & Traveling $\cdotp$ Handball $\cdotp$ Rowing \\
@@ -200,22 +205,22 @@
 \end{tabular}
 
 \iffalse
-\section{References}
+\section{REFERENCES}
 
 \begin{tabular}{rl}
-  Prof. Dr. Jianwei \textsc{Zhang} & University of Hamburg \\
+  Prof. Dr. Jianwei Zhang & University of Hamburg \\
   \footnotesize{(Thesis Advisor)} & Department of Informatics, Group TAMS \\
   & Vogt-Kölln-Str. 30 \\
   & 22527 Hamburg, Germany \\
   & \href{mailto:zhang@informatik.uni-hamburg.de}{zhang@informatik.uni-hamburg.de} \\
   \\
-  Prof. Dr. Stefan \textsc{Wermter} & University of Hamburg \\
+  Prof. Dr. Stefan Wermter & University of Hamburg \\
   & Department of Informatics, Group WTM\\
   & Vogt-Kölln-Str. 30 \\
   & 22527 Hamburg, Germany \\
   & \href{mailto:wermter@informatik.uni-hamburg.de}{wermter@informatik.uni-hamburg.de} \\
   \\
-  Dr. Andreas \textsc{M\"ader} & University of Hamburg \\
+  Dr. Andreas M\"ader & University of Hamburg \\
   & Department of Informatics, Group TAMS\\
   & Vogt-Kölln-Str. 30 \\
   & 22527 Hamburg, Germany \\
