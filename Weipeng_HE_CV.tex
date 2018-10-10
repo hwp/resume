@@ -19,15 +19,18 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[a4paper,11pt]{article} % Default font size and paper size
 
-%\usepackage{fontspec} % For loading fonts
+\usepackage{fontspec} % For loading fonts
 %\defaultfontfeatures{Mapping=tex-text}
-%\setmainfont{TeX Gyre Pagella} % Main document font
+\setmainfont{Lora}
+\setsansfont{Muli}
+\setmonofont{Muli}
+%\setmonofont[Scale=0.9]{Roboto Mono}
 
 \usepackage{url,parskip} % Formatting packages
 
@@ -41,7 +44,7 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
-\titleformat{\section}{\Large\bfseries\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titleformat{\section}{\Large\bfseries\scshape\sffamily\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{5pt}{-3pt} % Spacing around sections
 
 \usepackage{fancyhdr}
@@ -63,41 +66,51 @@
 \begin{document}
 \thispagestyle{empty}
 
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	NAME AND CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{center}
-  {\Huge\bfseries Weipeng He}
+  {\Huge\bfseries\sffamily Weipeng He}
 
-  Idiap Research Institute, Rue Marconi 19, 1920 Martigny, Switzerland \\
+  \sffamily Idiap Research Institute, Rue Marconi 19, 1920 Martigny, Switzerland \\
   \url{https://idiap.ch/~whe} $\cdotp$
   \href{mailto:heweipeng@gmail.com}{\texttt{heweipeng@gmail.com}} $\cdotp$
   \texttt{+41 27 721 77 71}
 \end{center}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Research Interests
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{EDUCATION}
+\section{Research Interests}
+- Multi-channel Audio Processing \\
+- Computational Auditory Scene Analysis \\
+- Robotic Audition
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
 \textbf{\'Ecole Polytechnique F\'ed\'erale de Lausanne (EPFL)} \hfill Switzerland \\
-\ind Ph.D. Candidate, \hfill since June 2016 \\
-\ind - Thesis (working title): Audio-Visual Tracking for Multi-Party Human-Robot Interaction
+\ind Ph.D. Candidate \hfill 2020 (expected) \\
+\ind - Thesis (working title): Audio-Visual Tracking for Multi-Party Human-Robot Interaction \\
+\ind - Supervisors : Dr. Jean-Marc Odobez and Dr. Petr Motlicek
 
 \textbf{University of Hamburg} \hfill Germany \\
-\ind M.Sc.\ in \textit{Intelligent Adaptive Systems}, GPA: 1.38/1.0 (excellent)  \hfill September 2015 \\
-\ind - Thesis: Visual-Audio Object Recognition Using Hidden Markov Models (Grade: 1.0)
+\ind M.Sc.\ in \textit{Intelligent Adaptive Systems}, GPA: 1.38/1.0 (excellent)  \hfill September 2015
+%\ind - Thesis: Visual-Audio Object Recognition Using Hidden Markov Models (Grade: 1.0)
 
 \textbf{Tsinghua University} \hfill China \\
-\ind B.E. in \textit{Computer Science and Technology}, GPA: 90/100 \hfill July 2012 \\
-\ind B.S. in \textit{Pure and Applied Mathematics} (second major), GPA: 83/100 \hfill July 2012
+\ind B.E. in \textit{Computer Science and Technology}, GPA: 90/100 (top 10\%) \hfill July 2012 \\
+\ind B.S. in \textit{Pure and Applied Mathematics} (second major), GPA: 83/100 %\hfill July 2012
 
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Experiences
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{EXPERIENCE}
+\section{Experience}
 
 \textbf{Idiap Research Institute}  \hfill Switzerland \\
 \textit{Research Assistant} \hfill June 2016 - Present
@@ -110,12 +123,12 @@
 \textit{Software Engineer} \hfill January - May 2016 
 \vspace{-\parskip}
 \begin{itemize}
-  \item Implementing nature language processing platform for automatic market information retrieval system.
+  \item Implemented nature language processing platform for automatic market information retrieval system.
 \end{itemize}
 
 %------------------------------------------------
 
-\textbf{University of Hamburg}, TAMS Group \hfill Hamburg, Germany \\
+\textbf{University of Hamburg} \hfill Germany \\
 \textit{Research Assistant}  \hfill October 2012 - November 2015
 \vspace{-\parskip}
 \begin{itemize}
@@ -127,7 +140,7 @@
 
 %------------------------------------------------
 
-\textbf{Hulu} \hfill Beijing, China \\
+\textbf{Hulu (Beijing)} \hfill China \\
 \textit{Research Intern} \hfill July - September 2012
 \vspace{-\parskip}
 \begin{itemize}
@@ -135,6 +148,10 @@
 \end{itemize}
 
 %------------------------------------------------
+
+%%%%%%%%%%%%%%%%%% DELETE %%%%%%%%%%%%%%%%%%%%%%%
+\iffalse  
+%%%%%%%%%%%%%%%%%% DELETE %%%%%%%%%%%%%%%%%%%%%%%
 
 \textbf{Tsinghua University}, Intelligent Information Acquisition Group \hfill Beijing, China \\
 \textit{Research Assistant} \hfill February - June 2012
@@ -162,35 +179,26 @@
   \item Constructed news corpus from Internet resources for keyword extraction.
 \end{itemize}
 
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Awards
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{SCHOLARSHIPS AND AWARDS}
+\section{Scholarships and Awards}
 
 Merit Scholarship for International Students, University of Hamburg \hfill 2013 - 2015 \\
 Outstanding Graduate, Tsinghua University (top 10\%) \hfill July 2012 \\
 Tung OOCL Scholarship, Tsinghua University \hfill December 2010  \\
 Zheng Geru Scholarship, Tsinghua University \hfill December 2009
 
-%----------------------------------------------------------------------------------------
-%	TECHNICAL SKILLS 
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%% END    %%%%%%%%%%%%%%%%%%%%%%%
+\fi
+%%%%%%%%%%%%%%%%%% END    %%%%%%%%%%%%%%%%%%%%%%%
 
-\section{TECHNICAL SKILLS}
-
-\begin{tabular}{rl}
-  Programming Languages: & C $\cdotp$ C++ $\cdotp$ MATLAB $\cdotp$ Java $\cdotp$ Python $\cdotp$ OCaml. \\
-  Libraries: & Gstreamer $\cdotp$ OpenCV $\cdotp$ GSL\@. \\
-  Parallel Programming: & OpenMP\@. \\
-  Other Tools: & Vim $\cdotp$ Bash $\cdotp$ \LaTeX{} $\cdotp$ GDB $\cdotp$ Git $\cdotp$ Gnuplot. \\
-\end{tabular}
-
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	PUBLICATIONS
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{CONFERENCE PAPERS}
+\section{Publications}
 \begin{itemize}
   \item ``Multimodal object recognition from visual and audio sequences.'' \\
     Weipeng He; Haojun Guan; Jianwei Zhang \\
@@ -205,11 +213,23 @@ Zheng Geru Scholarship, Tsinghua University \hfill December 2009
     \textit{Proceedings of TAC}, 2011
 \end{itemize}
 
-%----------------------------------------------------------------------------------------
-%	LANGUAGES
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	TECHNICAL SKILLS 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{LANGUAGES}
+\section{Technical Skills}
+
+\begin{tabular}{rl}
+  Programming Languages: & Python $\cdotp$ C $\cdotp$ C++ $\cdotp$ Java $\cdotp$ MATLAB \\
+  Libraries: & PyTorch $\cdotp$ Gstreamer $\cdotp$ OpenCV $\cdotp$ GSL $\cdotp$ OpenMP. \\
+  Other Tools: & Vim $\cdotp$ Bash $\cdotp$ \LaTeX{} $\cdotp$ GDB $\cdotp$ Git $\cdotp$ Gnuplot. \\
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	LANGUAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Languages}
 
 \begin{tabular}{rl}
   English: & TOEFL ibt 106 (reading 29 $\cdotp$ listening 27 $\cdotp$ speaking 23 $\cdotp$ writing 27) \\
@@ -218,10 +238,10 @@ Zheng Geru Scholarship, Tsinghua University \hfill December 2009
   French: & Basic \\
 \end{tabular}
 
-\section{MISCELLANEOUS}
+\section{Miscellaneous}
 
 \begin{tabular}{rl}
-  Interests: & Snowboarding, Traveling $\cdotp$ Handball \\
+  Interests: & Snowboarding $\cdotp$ Classical Guitar \\
   GitHub: & \href{https://github.com/hwp}{github.com/hwp} \\
 \end{tabular}
 
