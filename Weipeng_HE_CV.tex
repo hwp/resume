@@ -56,7 +56,8 @@
 \setlength{\headheight}{1em}
 
 \usepackage{enumitem}
-\setlist{nosep}
+\setitemize{itemsep=-.4em,leftmargin=2em}
+\renewcommand\labelitemi{-}
 
 \hyphenation{Tsinghua}
 \newcommand{\ind}{\hspace*{1em}}
@@ -84,9 +85,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Research Interests}
-- Multi-channel Audio Processing \\
-- Computational Auditory Scene Analysis \\
-- Robotic Audition
+My objective is research into acoustic scene analysis in complicated environments using deep learning-based methods. I am interested in sound source localization, speech enhancement, audio-visual fusion, speaker recognition, machine learning, etc. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	EDUCATION
@@ -99,12 +98,12 @@
 \ind - Supervisors : Dr. Jean-Marc Odobez and Dr. Petr Motlicek
 
 \textbf{University of Hamburg} \hfill Germany \\
-\ind M.Sc.\ in \textit{Intelligent Adaptive Systems}, GPA: 1.38/1.0 (excellent)  \hfill September 2015
+\ind M.Sc.\ in \textit{Intelligent Adaptive Systems}, GPA\@: 1.38/1.0 (excellent)  \hfill September 2015
 %\ind - Thesis: Visual-Audio Object Recognition Using Hidden Markov Models (Grade: 1.0)
 
 \textbf{Tsinghua University} \hfill China \\
-\ind B.E. in \textit{Computer Science and Technology}, GPA: 90/100 (top 10\%) \hfill July 2012 \\
-\ind B.S. in \textit{Pure and Applied Mathematics} (second major), GPA: 83/100 %\hfill July 2012
+\ind B.E. in \textit{Computer Science and Technology}, GPA\@: 90/100 (top 10\%) \hfill July 2012 \\
+\ind B.S. in \textit{Pure and Applied Mathematics} (second major), GPA\@: 83/100 %\hfill July 2012
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Experiences
@@ -114,37 +113,39 @@
 
 \textbf{Idiap Research Institute}  \hfill Switzerland \\
 \textit{Research Assistant} \hfill June 2016 - Present
-\vspace{-\parskip}
+\vspace{-.9\parskip}
 \begin{itemize}
-  \item TODO
+  \item Investigated deep learning-based methods for sound source localization in real human robot interaction scenarios. Achieved more than 90\% precision and recall for detecting and localizing multiple simultaneous sources in real-time.
+    [\href{https://www.youtube.com/watch?v=_4EwuVlE_pU}{video}]
+  \item Investigated methods for joint localization and speech/non-speech classification of multiple sound sources.
+    [\href{https://www.youtube.com/watch?v=O7bQvg03RTc}{video}]
 \end{itemize}
 
+%------------------------------------------------
+
 \textbf{National University of Singapore}  \hfill Singapore \\
-\textit{Software Engineer} \hfill January - May 2016 
-\vspace{-\parskip}
+\textit{Software Engineer} \hfill January - May 2016
+\vspace{-.9\parskip}
 \begin{itemize}
-  \item Developed nature language processing platform for automatic market information retrieval system.
+  \item Developed web interface (back-end) of a business insight information retrieval system.
 \end{itemize}
 
 %------------------------------------------------
 
 \textbf{University of Hamburg} \hfill Germany \\
 \textit{Research Assistant}  \hfill October 2012 - November 2015
-\vspace{-\parskip}
+\vspace{-.9\parskip}
 \begin{itemize}
-  \item Studied interative object recognition for robots with audio-visual sensory fusion.
-% \item Examined and compared feature fusion and decision fusion methods for multimodal object recognition with experiments.
-% \item Implemented C library for hidden Markov models (\href{https://github.com/hwp/notGHMM}{website}) and GStreamer plugins for audio and visual feature extraction (\href{https://github.com/hwp/gval}{website}).
-% \item Tested noise reduction methods for robots' voice command using spectral subtraction and blind source separation techniques.
+  \item Studied interactive object recognition methods with audio-visual sensory fusion.
 \end{itemize}
 
 %------------------------------------------------
 
 \textbf{Hulu (Beijing)} \hfill China \\
 \textit{Research Intern} \hfill July - September 2012
-\vspace{-\parskip}
+\vspace{-.9\parskip}
 \begin{itemize}
-  \item Optimized search engine for fast and error tolerant search with fast approximate string matching.
+  \item Optimized search engine for fast and error tolerant search with fast approximate string matching. 
 \end{itemize}
 
 %------------------------------------------------
@@ -200,24 +201,26 @@ Zheng Geru Scholarship, Tsinghua University \hfill December 2009
 
 \section{Publications}
 \begin{itemize}
-  \item \textbf{Joint Localization and Classification of Multiple Sound Sources Using a Multi-task Neural Network.}
+  \item ``Joint Localization and Classification of Multiple Sound Sources Using a Multi-task Neural Network.''
     Weipeng He, Petr Motlicek and Jean-Marc Odobez,
     \textit{Proc. Interspeech 2018}
-    (nominated for a best paper award)
+    (\textbf{nominated for a best paper award})
+    [\href{http://doi.org/10.21437/Interspeech.2018-1269}{doi}, \href{https://www.youtube.com/watch?v=O7bQvg03RTc}{video}]
 
-  \item \textbf{Deep Neural Networks for Multiple Speaker Detection and Localization.}
+  \item ``Deep Neural Networks for Multiple Speaker Detection and Localization.''
     Weipeng He, Petr Motlicek and Jean-Marc Odobez,
     \textit{2018 IEEE International Conference on Robotics and Automation (ICRA)}
+    [\href{http://doi.org/10.1109/ICRA.2018.8461267}{doi}, \href{https://www.youtube.com/watch?v=_4EwuVlE_pU}{video}]
 
-  \item \textbf{Multimodal Object Recognition From Visual and Audio Sequences.}
+  \item ``Multimodal Object Recognition From Visual and Audio Sequences.''
     Weipeng He, Haojun Guan and Jianwei Zhang,
     \textit{2015 IEEE International Conference on Multisensor Fusion and Information Integration for Intelligent Systems (MFI)}
 
-  \item \textbf{What to Do First: The Initial Behavior in a Multi-sensory Household Object Recognition and Categorization System.}
+  \item ``What to Do First: The Initial Behavior in a Multi-sensory Household Object Recognition and Categorization System.''
     Haojun Guan, Weipeng He and Jianwei Zhang,
     \textit{2014 IEEE International Conference on Multisensor Fusion and Information Integration for Intelligent Systems (MFI)}
 
-  \item \textbf{THUNLP at TAC KBP 2011 in Entity Linking.}
+  \item ``THUNLP at TAC KBP 2011 in Entity Linking.''
     Yu Zhao, Weipeng He, Zhiyuan Liu and Maosong Sun,
     \textit{Proceedings of TAC, 2011}
 \end{itemize}
