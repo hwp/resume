@@ -1,4 +1,5 @@
 resume
 ======
 
-My resume and templates!
+My resume as well as latex templates.
+
