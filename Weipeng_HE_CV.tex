@@ -23,7 +23,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper,11pt]{article} % Default font size and paper size
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
 
 \usepackage{fontspec} % For loading fonts
 %\defaultfontfeatures{Mapping=tex-text}
@@ -38,6 +38,7 @@
 
 \usepackage{fullpage}
 
+\usepackage{soul}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
@@ -86,7 +87,7 @@
 
 \section{Research Interests}
 \begin{center}
-Acoustic Signal Processing $\cdotp$ Robot Audio Perception $\cdotp$ Speech Enhancement
+Acoustic Signal Processing $\cdotp$ Robot Audio Perception $\cdotp$ Deep Learning $\cdotp$ Speech Enhancement
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -130,7 +131,7 @@ Acoustic Signal Processing $\cdotp$ Robot Audio Perception $\cdotp$ Speech Enhan
 \textit{Research Intern} \hfill July 2019 - Present
 \vspace{-.9\parskip}
 \begin{itemize}
-  \item Research end-to-end neural network approaches for far-field automatic speech recognition.
+  \item Researched end-to-end neural network approaches for far-field automatic speech recognition.
 \end{itemize}
 
 %------------------------------------------------
@@ -139,16 +140,10 @@ Acoustic Signal Processing $\cdotp$ Robot Audio Perception $\cdotp$ Speech Enhan
 \textit{Software Engineer} \hfill January - May 2016
 \vspace{-.9\parskip}
 \begin{itemize}
-  \item Developed web interface (back-end) of a business insight information retrieval system.
+  \item Developed web interface (back-end) of a deep learning based business insight information retrieval system.
 \end{itemize}
 
 %------------------------------------------------
-
-\pagebreak
-
-%------------------------------------------------
-
-\section*{Experience (cont.)}
 
 \textbf{University of Hamburg} \hfill Germany \\
 \textit{Research Assistant}  \hfill October 2012 - November 2015
@@ -159,11 +154,17 @@ Acoustic Signal Processing $\cdotp$ Robot Audio Perception $\cdotp$ Speech Enhan
 
 %------------------------------------------------
 
+\pagebreak
+
+%------------------------------------------------
+
+\section*{Experience (cont.)}
+
 \textbf{Hulu (Beijing)} \hfill China \\
 \textit{Research Intern} \hfill July - September 2012
 \vspace{-.9\parskip}
 \begin{itemize}
-  \item Optimized search engine for fast and error tolerant search with fast approximate string matching.
+  \item Optimized search engine for with fast approximate string matching.
 \end{itemize}
 
 %------------------------------------------------
@@ -227,7 +228,7 @@ Zheng Geru Scholarship, Tsinghua University \hfill December 2009
   \item \textbf{Joint localization and classification of multiple sound sources using a multi-task neural network.}
     \textbf{Weipeng He}, Petr Motlicek and Jean-Marc Odobez,
     \textit{Proc. Interspeech 2018}
-    (\underline{nominated for a best student paper award})
+    (\ul{nominated for a best student paper award})
     [\href{http://doi.org/10.21437/Interspeech.2018-1269}{doi}, \href{https://www.youtube.com/watch?v=O7bQvg03RTc}{video}]
 
   \item \textbf{Deep neural networks for multiple speaker detection and localization.}
