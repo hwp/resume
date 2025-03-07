@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,9pt]{extarticle} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont{Lora}
+\setmainfont{Muli}
+\setsansfont{Muli}
+\setmonofont{Muli}
+%\setmonofont[Scale=0.9]{Roboto Mono}
+
+\usepackage{parskip}
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage{fullpage}
+
+\usepackage{soul}
+
+\usepackage[bookmarks]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\LARGE\bfseries\scshape\sffamily\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{8mm}{3mm} % Spacing around sections
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Weipeng He, Page \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{15pt}
+\setlength{\headsep}{10pt}
+
+\usepackage{enumitem}
+\setitemize{itemsep=-.4em,leftmargin=2em}
+\renewcommand\labelitemi{-}
+
+\hyphenation{Tsinghua}
+\newcommand{\ind}{\hspace*{1em}}
+
+\setlength{\parskip}{12pt}
+
+\begin{document}
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	NAME AND CONTACT INFORMATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+  {\Huge\bfseries\sffamily WEIPENG HE}
+
+  Seattle, WA 98109 $\bullet$
+  \href{mailto:heweipeng@gmail.com}{\texttt{heweipeng@gmail.com}} $\bullet$
+  \texttt{(206) 209-7280} $\bullet$
+  \url{www.linkedin.com/in/hwp0} 
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	PEER REVIEWS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Peer Reviews}
+
+\begin{itemize}[itemsep=-.9em]
+  \item \textit{IEEE/ACM Transactions on Audio, Speech, and Language Processing}, 2021-2024
+  \item \textit{IEEE Signal Processing Letters}, 2019-2024
+  \item \textit{IEEE Robotics and Automation Letters}, 2021-2022
+  \item \textit{Journal of Sound and Vibration (JSV)}, 2020-2021
+  \item \textit{Interspeech}, 2021
+  \item \textit{European Conference on Computer Vision (ECCV)}, 2020
+  \item \textit{IEEE International Conference on Robotics and Automation (ICRA)}, 2020
+  \item \textit{ACM International Conference on Multimodal Interaction (ICMI)}, 2018
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	update date
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vfill
+\centering \footnotesize \itshape{Updated on \today}
+
+\end{document}
+

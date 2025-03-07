@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,9pt]{extarticle} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont{Lora}
+\setmainfont{Muli}
+\setsansfont{Muli}
+\setmonofont{Muli}
+%\setmonofont[Scale=0.9]{Roboto Mono}
+
+\usepackage{parskip}
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage{fullpage}
+
+\usepackage{soul}
+
+\usepackage[bookmarks]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\LARGE\bfseries\scshape\sffamily\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{8mm}{3mm} % Spacing around sections
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Weipeng He, Page \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{15pt}
+\setlength{\headsep}{10pt}
+
+\usepackage{enumitem}
+\setitemize{itemsep=-.4em,leftmargin=2em}
+\renewcommand\labelitemi{-}
+
+\hyphenation{Tsinghua}
+\newcommand{\ind}{\hspace*{1em}}
+
+\setlength{\parskip}{12pt}
+
+\begin{document}
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	NAME AND CONTACT INFORMATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+  {\Huge\bfseries\sffamily WEIPENG HE}
+
+  Seattle, WA 98109 $\bullet$
+  \href{mailto:heweipeng@gmail.com}{\texttt{heweipeng@gmail.com}} $\bullet$
+  \texttt{(206) 209-7280} $\bullet$
+  \url{www.linkedin.com/in/hwp0} 
+\end{center}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+\begin{enumerate}[label={[\arabic*]}]
+  \item Egocentric Audio-Visual Noise Suppression. \\
+        Roshan Sharma, Weipeng He, Ju Lin, Egor Lakomkin, Yang Liu, Kaustubh Kalgaonkar, \\
+        in \textit{2023 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)}
+        [\href{https://doi.org/10.1109/ICASSP49357.2023.10095890}{doi}]
+
+  \item Multi-task Neural Network for Robust Multiple Speaker Embedding Extraction. \\
+        Weipeng He, Petr Motlicek, and Jean-Marc Odobez, \\
+        in \textit{Proc. Interspeech 2021}
+        [\href{https://doi.org/10.21437/Interspeech.2021-1769}{doi}]
+
+  \item Neural Network Adaptation and Data Augmentation for Multi-Speaker Direction-of-Arrival Estimation. \\
+        Weipeng He, Petr Motlicek, and Jean-Marc Odobez, \\
+        \textit{IEEE/ACM Transactions on Audio, Speech, and Language Processing}, vol. 29, pp. 1303–1317, 2021
+        [\href{https://doi.org/10.1109/TASLP.2021.3060257}{doi}]
+
+  \item IEEE SLT 2021 Alpha-mini Speech Challenge: Open Datasets, Tracks, Rules and Baselines. \\
+        Yihui Fu, Weipeng He, et al. \\
+        in \textit{2021 IEEE Spoken Language Technology Workshop (SLT)}
+        [\href{https://doi.org/10.1109/SLT48900.2021.9383546}{doi}]
+
+  \item Spatial attention for far-field speech recognition with deep beamforming neural networks. \\
+        Weipeng He, Lu Lu, Biqiao Zhang, Jay Mahadeokar, Kaustubh Kalgaonkar, and Christian Fuegen, \\
+        in \textit{2020 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)}
+        [\href{https://doi.org/10.1109/ICASSP40776.2020.9053439}{doi}]
+
+  \item The MuMMER Data Set for Robot Perception in Multi-Party HRI Scenarios. \\
+        Olivier Canevet, Weipeng He, Petr Motlicek, and Jean-Marc Odobez, \\
+        in \textit{2020 29th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)}
+
+  \item Adaptation of multiple sound source localization neural networks with weak supervision and domain-adversarial training. \\
+        Weipeng He, Petr Motlicek, and Jean-Marc Odobez, \\
+        in \textit{2019 IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)}
+        [\href{https://doi.org/10.1109/ICASSP.2019.8682655}{doi}]
+
+  \item MuMMER:\@ Socially intelligent human-robot interaction in public spaces. \\
+        Mary Ellen Foster, Weipeng He, et al. \\
+        in \textit{Proc.\ AI-HRI 2019}
+        [\href{https://arxiv.org/abs/1909.06749}{preprint}]
+
+  \item Joint localization and classification of multiple sound sources using a multi-task neural network. \\
+        Weipeng He, Petr Motlicek, and Jean-Marc Odobez, \\
+        in \textit{Proc. Interspeech 2018}
+        [\href{http://doi.org/10.21437/Interspeech.2018-1269}{doi}, \href{https://www.youtube.com/watch?v=O7bQvg03RTc}{video}]
+
+  \item Deep neural networks for multiple speaker detection and localization. \\
+        Weipeng He, Petr Motlicek, and Jean-Marc Odobez, \\
+        in \textit{2018 IEEE International Conference on Robotics and Automation (ICRA)}
+        [\href{http://doi.org/10.1109/ICRA.2018.8461267}{doi}, \href{https://www.youtube.com/watch?v=_4EwuVlE_pU}{video}]
+
+  \item Multimodal object recognition from visual and audio sequences. \\
+        Weipeng He, Haojun Guan, and Jianwei Zhang, \\
+        in \textit{2015 IEEE Int.\ Conf.\ on Multisensor Fusion and Information Integration for Intelligent Systems (MFI)}
+
+  \item What to do first: the initial behavior in a multi-sensory household object recognition and categorization system. \\
+        Haojun Guan, Weipeng He, and Jianwei Zhang, \\
+        in \textit{2014 IEEE Int.\ Conf.\ on Multisensor Fusion and Information Integration for Intelligent Systems (MFI)}
+
+  \item THUNLP at TAC KBP 2011 in entity linking. \\
+        Yu Zhao, Weipeng He, Zhiyuan Liu, and Maosong Sun, \\
+        in \textit{Proceedings of TAC, 2011}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	update date
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vfill
+\centering \footnotesize \itshape{Updated on \today}
+
+\end{document}
+
