@@ -1,18 +1,14 @@
 .PHONY: all
 
-all: Weipeng_HE_CV.pdf Weipeng_HE_publications.pdf Weipeng_HE_reviews.pdf Weipeng_HE_Resume.pdf
+VERSIONS = 1 2
 
-Weipeng_HE_CV.pdf : Weipeng_HE_CV.tex
+all: Weipeng_HE_publications.pdf Weipeng_HE_reviews.pdf $(foreach ver, $(VERSIONS), Weipeng_HE_Resume_v$(ver).pdf)
+
+%.pdf : %.tex
 	xelatex $<
 
-Weipeng_HE_publications.pdf : Weipeng_HE_publications.tex
-	xelatex $<
-
-Weipeng_HE_reviews.pdf : Weipeng_HE_reviews.tex
-	xelatex $<
-
-Weipeng_HE_Resume.pdf : Weipeng_HE_CV.pdf
-	cp $< $@
+Weipeng_HE_Resume_v%.tex : Weipeng_HE_CV.tex
+	sed 's/\\newcommand{\\version}{.*}/\\newcommand{\\version}{$*}/' $< > $@
 
 .PHONY: clean
 

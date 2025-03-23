@@ -66,6 +66,8 @@
 
 \setlength{\parskip}{12pt}
 
+\newcommand{\version}{0}
+
 \begin{document}
 \thispagestyle{empty}
 
@@ -88,8 +90,16 @@
 
 \begin{center}
   {\LARGE\bfseries\sffamily Senior Research Scientist} \\[4pt]
-  Audio and Speech Processing $\bullet$ Machine Learning $\bullet$ Voice AI $\bullet$ On-device Model Optimization \\
+%
+\ifcase\version
+% version zero nothing
+\or
+  Audio and Speech Processing $\bullet$ Machine Learning $\bullet$ Voice AI $\bullet$ Model Optimization \& Compression \\
   Speech Enhancement $\bullet$ Microphone Array Processing $\bullet$ Keyword Spotting $\bullet$ Sound Separation \& Localization
+\else
+  Audio and Speech Processing $\bullet$ Machine Learning $\bullet$ Voice AI $\bullet$ On-device Model Optimization $\bullet$ Audio DSP \\
+  Speech Enhancement $\bullet$ Microphone Array Processing $\bullet$ Keyword Spotting $\bullet$ Sound Separation \& Localization
+\fi
 \end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -108,7 +118,7 @@ Conducted research and deployment of speech and audio signal processing techniqu
   \item Deployed a lightweight speech enhancement model to a DSP on smart glasses, reducing computational cost by 30\% through quantization and computational graph optimization techniques.
   \item Developed multi-channel end-to-end wake word detection models for smart glasses, enhancing noise robustness. Optimized model efficiency, resulting in a 30-minute increase in device battery life.
   \item Implemented real-time barge-in detection on smart glasses, achieving less than 5\% false rejection and false acceptance rates, enabling seamless natural conversation with large language models.
-  \item Led an exploratory research project to design and prototype an audio "magic eraser" model capable of separating individual sounds from mixtures based on sound classes, enabling selective suppression or enhancement of specific sounds in videos.
+  \item Led an exploratory research project to design and prototype an audio ``magic eraser'' model capable of separating individual sounds from mixtures based on sound classes, enabling selective suppression or enhancement of specific sounds in videos.
   \item Mentored two interns in their research projects on multi-channel sound separation and audio-visual noise suppression, providing guidance on experimental design, data analysis, and manuscript preparation, culminating in peer-reviewed publications and submissions.
 \end{itemize}
 
@@ -136,7 +146,8 @@ Researched various deep learning models for audio signal processing using microp
 Developed deep beamforming neural networks for far-field automatic speech recognition on smart speakers.
 \vspace{-1.8\parskip}
 \begin{itemize}[nosep]
-  \item Reduced word error rate by 9\% by using the proposed spatial attention.
+  %\item Investigated various beamforming 
+  \item Innovated a spatial attention module for Reduced word error rate by 9\%.
 \end{itemize}
 
 %------------------------------------------------
