@@ -36,7 +36,8 @@
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
 
-\usepackage{fullpage}
+%\usepackage{fullpage}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
 
 \usepackage{soul}
 
@@ -75,82 +76,88 @@
 %	NAME AND CONTACT INFORMATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{center}
+%\begin{center}
   {\Huge\bfseries\sffamily WEIPENG HE}
 
   Seattle, WA 98109 $\bullet$
   \href{mailto:heweipeng@gmail.com}{\texttt{heweipeng@gmail.com}} $\bullet$
   \texttt{+1 (206) 209-7280} $\bullet$
   \url{www.linkedin.com/in/hwp0}
-\end{center}
+%\end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Key Words
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{center}
-  {\LARGE\bfseries\sffamily Senior Research Scientist} \\[4pt]
+{\LARGE\bfseries\sffamily Speech \& Audio Research Scientist} \\[4pt]
 %
 \ifcase\version
 % version zero nothing
 \or
   Audio and Speech Processing $\bullet$ Machine Learning $\bullet$ Voice AI $\bullet$ Model Optimization \& Compression \\
   Speech Enhancement $\bullet$ Microphone Array Processing $\bullet$ Keyword Spotting $\bullet$ Sound Separation \& Localization
-\else
+\or
   Audio and Speech Processing $\bullet$ Machine Learning $\bullet$ Voice AI $\bullet$ On-device Model Optimization $\bullet$ Audio DSP \\
   Speech Enhancement $\bullet$ Microphone Array Processing $\bullet$ Keyword Spotting $\bullet$ Sound Separation \& Localization
+\else
+  Speech and Audio Processing $\bullet$ Machine Learning $\bullet$ Voice AI $\bullet$ Speech Enhancement $\bullet$ Speech Recognition \\
+  Keyword Spotting $\bullet$ Sound Separation $\bullet$ Sound Event Detection \& Localization $\bullet$ Model Optimization \& Compression
 \fi
-\end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Experiences
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Experience}
+\section{Work Experience}
 
-\textbf{Senior Research Scientist} \hfill September 2021 --- Present \\
-\textbf{Meta}, Speech AI  \hfill Seattle, WA \\
+\textbf{Research Scientist} \hfill September 2021 --- Present \\
+Meta, Speech AI \hfill Seattle, WA \\
 \vspace{-1.5\parskip}
 
-Conducted research and deployment of speech and audio signal processing techniques to wearable devices.
+Conducted research and deployment of emerging speech and audio technologies for wearable devices in challenging acoustic environments, leveraging advanced signal processing and machine learning techniques.
 \vspace{-.9\parskip}
 \begin{itemize}[nosep]
   \item Deployed a lightweight speech enhancement model to a DSP on smart glasses, reducing computational cost by 30\% through quantization and computational graph optimization techniques.
-  \item Developed multi-channel end-to-end wake word detection models for smart glasses, enhancing noise robustness. Optimized model efficiency, resulting in a 30-minute increase in device battery life.
+  \item Pioneered the development of multi-channel end-to-end wake word detection models for smart glasses, removing dependency to traditional audio DSP front-end and reducing false rejection rate by 13\% in noisy conditions. Optimized overall system efficiency, resulting in a 30-minute increase in device battery life.
   \item Implemented real-time barge-in detection on smart glasses, achieving less than 5\% false rejection and false acceptance rates, enabling seamless natural conversation with large language models.
-  \item Led an exploratory research project to design and prototype an audio ``magic eraser'' model capable of separating individual sounds from mixtures based on sound classes, enabling selective suppression or enhancement of specific sounds in videos.
-  \item Mentored two interns in their research projects on multi-channel sound separation and audio-visual noise suppression, providing guidance on experimental design, data analysis, and manuscript preparation, culminating in peer-reviewed publications and submissions.
+  \item Led an exploratory research project to design and prototype an audio ``magic eraser'' model, enabling selective suppression or enhancement of specific sounds in videos by separating individual sounds from mixtures based on sound classes.
+  \item Mentored an intern research project on audio-visual noise suppression from a ego-centric perspective, leveraging multimodal fusion and multitask learning.
+  \item Mentored an intern on a research project focused on multi-channel sound separation leveraging spatial information from microphone array used in cocktail party environments.
+  \item Led the implementation of automated data preprocessing and augmentation pipeline for noise suppression and wake word detection model development, reducing manual effort by 90\%.
 \end{itemize}
 
 % \textit{Postdoctoral Researcher} \hfill November 2020 --- August 2021 \\
 % \textit{Research Assistant} \hfill June 2016 --- October 2020%
 \textbf{Research Assistant} \hfill June 2016 --- August 2021 \\
-\textbf{Idiap Research Institute}, Perception \& Activity Understanding  \hfill Martigny, Switzerland \\
+Idiap Research Institute, Perception \& Activity Understanding  \hfill Martigny, Switzerland \\
 \vspace{-1.5\parskip}
 
-Researched various deep learning models for audio signal processing using microphone array on robots.
+Researched and developed deep learning models for audio perception on robots in challenging human-robot interaction environments.
 \vspace{-.9\parskip}
 \begin{itemize}[nosep]
-  \item Developed deep learning-based sound source localization models for human-robot interactions.
-  \item Achieved more than 90\% precision and recall for detecting and localizing multiple simultaneous sources in real-time. [\href{https://www.youtube.com/watch?v=_4EwuVlE_pU}{video demo}]
+  \item Developed deep learning-based sound source localization models for the Pepper robot in noisy multi-talker environments, achieving over 90\% precision and recall for real-time detection and localization of multiple simultaneous sounds sources. [\href{https://www.youtube.com/watch?v=_4EwuVlE_pU}{video demo}]
   \item Researched models for joint localization and speech/non-speech classification of multiple sound sources. Achieved 20\% relative accuracy improvement over traditional methods. [\href{https://www.youtube.com/watch?v=O7bQvg03RTc}{video demo}]
-  \item Innovated data augmentation and domain adaptation methods for low-resource training of sound source localization neural networks.
+  \item Innovated data augmentation and weakly-supervised domain adaptation methods for low-resource training of sound source localization neural networks, enabling development of accurate sound source location models using training data without complete location labels.
 \end{itemize}
 
 %------------------------------------------------
 
 \textbf{Research Intern} \hfill July 2019 --- October 2019 \\
-\textbf{Facebook}, Speech AI  \hfill Menlo Park, CA \\
+Facebook, Speech AI  \hfill Menlo Park, CA \\
 \vspace{-1.5\parskip}
 
-Developed deep beamforming neural networks for far-field automatic speech recognition on smart speakers.
-\vspace{-1.8\parskip}
+Designed and developed deep beamforming neural networks for far-field automatic speech recognition on smart speakers.
+\vspace{-0.9\parskip}
 \begin{itemize}[nosep]
-  %\item Investigated various beamforming 
-  \item Innovated a spatial attention module for Reduced word error rate by 9\%.
+  \item Investigated and compared various state-of-the-art neural beamformer paradigms as the front-end component of far-field automatic speech recognition systems.
+  \item Innovated a spatial attention module for factorized complex linear projection models, reducing computational cost and improving recognition rate (reduced word error rate by 9\%).
 \end{itemize}
 
 %------------------------------------------------
+
+%%%%%%%%%%%%%%%%%% DELETE %%%%%%%%%%%%%%%%%%%%%%%
+\iffalse{}
+%%%%%%%%%%%%%%%%%% DELETE %%%%%%%%%%%%%%%%%%%%%%%
 
 \textbf{Software Engineer} \hfill January 2016 --- May 2016 \\
 \textbf{6Estates} (\textit{Startup})  \hfill Singapore \\
@@ -181,10 +188,6 @@ Developed deep beamforming neural networks for far-field automatic speech recogn
 \end{itemize}
 
 %------------------------------------------------
-
-%%%%%%%%%%%%%%%%%% DELETE %%%%%%%%%%%%%%%%%%%%%%%
-\iffalse{}
-%%%%%%%%%%%%%%%%%% DELETE %%%%%%%%%%%%%%%%%%%%%%%
 
 \textbf{Tsinghua University}, Intelligent Information Acquisition Group \hfill Beijing, China \\
 \textit{Research Assistant} \hfill February --- June 2012
@@ -223,7 +226,7 @@ Developed deep beamforming neural networks for far-field automatic speech recogn
 \section{Skills}
 
 \begin{tabular}{rl}
-  Programming: & Python $\bullet$ C $\bullet$ C++ $\bullet$ Java $\bullet$ MATLAB \\
+  Programming: & Python $\bullet$ C $\bullet$ C++ $\bullet$  MATLAB \\
   Libraries: & PyTorch $\bullet$ NumPy $\bullet$ Gstreamer $\bullet$ OpenCV $\bullet$ GSL $\bullet$ Spark \\
   Other Tools: & Vim $\bullet$ Bash $\bullet$ \LaTeX{} $\bullet$ GDB $\bullet$ Git $\bullet$ Mercurial $\bullet$ Gnuplot \\
   Languages: & English (full professional proficiency) $\bullet$ Chinese (native) $\bullet$ German (basic) $\bullet$ French (basic) \\
