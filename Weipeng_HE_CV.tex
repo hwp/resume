@@ -89,7 +89,19 @@
 %	Key Words
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\LARGE\bfseries\sffamily Speech \& Audio Research Scientist} \\[4pt]
+{\LARGE\bfseries\sffamily %
+\ifcase\version
+  Speech \& Audio
+\or
+  Senior
+\or
+  Speech \& Audio
+\or
+  Speech \& Audio
+\else
+  Senior
+\fi
+Research Scientist} \\[4pt]
 %
 \ifcase\version
 % version zero nothing
@@ -99,6 +111,9 @@
 \or
   Audio and Speech Processing $\bullet$ Machine Learning $\bullet$ Voice AI $\bullet$ On-device Model Optimization $\bullet$ Audio DSP \\
   Speech Enhancement $\bullet$ Microphone Array Processing $\bullet$ Keyword Spotting $\bullet$ Sound Separation \& Localization
+\or
+  Speech and Audio Processing $\bullet$ Machine Learning $\bullet$ Voice AI $\bullet$ Speech Enhancement $\bullet$ Speech Recognition \\
+  Keyword Spotting $\bullet$ Sound Separation $\bullet$ Sound Event Detection \& Localization $\bullet$ Model Optimization \& Compression
 \else
   Speech and Audio Processing $\bullet$ Machine Learning $\bullet$ Voice AI $\bullet$ Speech Enhancement $\bullet$ Speech Recognition \\
   Keyword Spotting $\bullet$ Sound Separation $\bullet$ Sound Event Detection \& Localization $\bullet$ Model Optimization \& Compression
